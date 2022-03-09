@@ -10,7 +10,7 @@
   <component>
     <name>PCIe</name>
     <vc_type>git</vc_type>
-    <git_repo>https://github.com/HailiangQin/PCIe</git_repo>
+    <git_repo>git@github.com:HailiangQin/PCIe.git</git_repo>
     <git_branch>master</git_branch>
     <tag>LSA_v_1.0</tag>
     <dis>this is PCIe LSA delivery</dis>
@@ -20,7 +20,7 @@
   <component>
     <name>NoC</name>
     <vc_type>git</vc_type>
-    <git_repo>https://github.com/HailiangQin/NoC</git_repo>
+    <git_repo>git@github.com:HailiangQin/NoC.git</git_repo>
     <git_branch>master</git_branch>
     <tag>LSA_v_1.0</tag>
     <dis>this is NoC LSA delivery</dis>

@@ -1,1 +1,0 @@
-# SoC top Makefile

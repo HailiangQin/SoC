@@ -2,8 +2,8 @@
 <envconfig>
   <!-- module load tool -->
   <!-- standard setup modulefiles and put these after the other loads so they can see those vars -->
-  <module> <name>verdi</name>  <ver>P-2019.06-SP2-6</ver> </module>
-  <module> <name>vcs-mx</name>  <ver>P-2019.06-SP2-7</ver> </module>
+  <module> <name>verdi</name>  <ver>Verdi_O-2018.09-SP2</ver> </module>
+  <module> <name>vcs-mx</name>  <ver>O-2018.09-SP2</ver> </module>
 
   <!-- COmponents -->
   <!-- import PCIE Components ====================================== -->

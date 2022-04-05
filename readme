@@ -1,0 +1,5 @@
+frun -e "chip_security/ChipSecurityBase" -l chip.log
+frun -e "chip_security/ChipSecuritySanity" -l chip.log
+
+frun -e "chip_security/ChipSecurityBase:chip_security/ChipSecuritySanity" -l chip.log
+frun -e "chip_security/all when=security" -l chip.log

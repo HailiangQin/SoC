@@ -1,0 +1,28 @@
+
+
+Import('env_cmn env_node')
+env_local = env_cmn.Clone()
+
+env_local.Replace(testws = env_cmn['testws'])
+env_local.Replace(test_runws = env_cmn['test_runws'])
+env_local.Replace(test_name = env_cmn['testobjc'])
+
+if env_local['test_name'] == 'blank':
+    env_local.Replace(C_SRC=Glob("{}/current/generic/blank.cpp".format(env_local['UTILS_HOME'])))
+    env_local.Replace(C_TARGET='blank')
+else:
+    env_local.Replace(C_SRC=Glob("{}/{}.cpp".format(env_cmn['testws'], env_local['test_name'])))
+    env_local.Replace(C_TARGET=env_local['test_name'])
+
+env_local.Replace(C_LIB_INSTALL_PATH=env_local['test_runws'])
+env_local.Replace(LIBS=['systemc', 'sync_dpi'])
+env_local.Replace(LIBPATH=[env_local['SYSTEMC_HOME']+'/lib64', env_local['OUT_LIB_DIR'], env_local['RELEASE_COMMON_LIB']])
+env_local.Replace(CXXFLAGS=env_local['CXXFLAGS_COMMON'] + ' -I' + env_local['RELEASE_COMMON_INC'])
+
+env_local.Replace(BUILD_C_LIB = '1')
+env_local.Replace(NODE_BUILD_C_LIB = 'NREL_src_test_chip_security')
+
+Export('env_local env_node')
+print("security test is calling common")
+
+SConscript("{}/common.scons".format(env_cmn['SCONS_HOME']))

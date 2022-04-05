@@ -1,0 +1,7 @@
+GEN_FLIST_PATH_TO_FIND_FILES = .
+GEN_FLIST_SUFFIX             = ('.sv')
+GEN_FLIST_EXCLUDE            = []
+GEN_FLIST_TARGET             = soc_top_tb.f
+GEN_FLIST                    = 1
+GEN_FLIST_IS_TB              = 1
+NODE_GEN_FLIST               = NREL_soc_top_flist

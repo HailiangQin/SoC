@@ -15,9 +15,8 @@ def frun_scons_call(node_file):
 frun_scons_call('{}/src/verif/node.scons'.format(os.environ['STEM']))
 frun_scons_call('{}/node.scons'.format(os.environ['UTILS_HOME']))
 frun_scons_call('{}/catflist.scons'.format(os.environ['SCONS_HOME']))
-SConscript('{}/frun.scons'.format(env_cmn['testws']))
+frun_scons_call('{}/node.scons'.format(env_cmn['testws']))
 
-#SConscript('{}/src/config/depend.scons'.format(os.environ['STEM']))
 SConscript('{}/parse_depend.scons'.format(os.environ['SCONS_HOME']))
 
 

@@ -1,4 +1,0 @@
-Import('env_cmn env_node')
-
-Requires(env_node['node_cat_tb_flist'], env_node['NREL_utils_top_flist'])
-Requires(env_node['node_cat_tb_flist'], env_node['NREL_soc_top_flist'])

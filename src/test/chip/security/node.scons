@@ -1,0 +1,11 @@
+
+C_SRC               = glob($UTILS_HOME/current/generic/blank.cpp)
+C_TARGET            = $test_obj
+C_LIB_INSTALL_PATH  = $test_runws
+LIBS                = [systemc, sync_dpi]
+LIBPATH             = [$SYSTEMC_HOME/lib64, $OUT_LIB_DIR, $RELEASE_COMMON_LIB]
+CXXFLAGS            = $CXXFLAGS_COMMON -I$RELEASE_COMMON_INC
+
+BUILD_C_LIB         = 1
+NODE_BUILD_C_LIB    = NREL_src_test_chip_security
+

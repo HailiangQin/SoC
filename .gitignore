@@ -1,1 +1,6 @@
 import
+commitID
+configuration_id
+out
+_env/.project_old.xml
+.sconsign.dblite

@@ -1,0 +1,7 @@
+<node_cat_tb_flist>
+    <NREL_utils_generic_flist/>
+    <NREL_utils_sync_env_flist/>
+    <NREL_utils_sync_test_sv_flist/>
+    <NREL_utils_top_flist/>
+    <NREL_soc_top_flist/>
+</node_cat_tb_flist>

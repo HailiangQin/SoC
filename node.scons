@@ -1,0 +1,22 @@
+
+import os
+
+Import('env_cmn')
+env_node = Environment()
+Export('env_cmn env_node')
+
+SConscript('{}/pre.scons'.format(os.environ['SCONS_HOME']))
+
+def frun_scons_call(node_file):
+    parse_node_scons = '{}/parse_node.scons'.format(os.environ['SCONS_HOME'])
+    node_scons = node_file
+    SConscript(parse_node_scons, 'node_scons')
+
+frun_scons_call('{}/src/verif/node.scons'.format(os.environ['STEM']))
+frun_scons_call('{}/node.scons'.format(os.environ['UTILS_HOME']))
+frun_scons_call('{}/catflist.scons'.format(os.environ['SCONS_HOME']))
+frun_scons_call('{}/node.scons'.format(env_cmn['testws']))
+
+SConscript('{}/parse_depend.scons'.format(os.environ['SCONS_HOME']))
+
+

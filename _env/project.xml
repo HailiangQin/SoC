@@ -9,20 +9,20 @@
   <!-- import PCIE Components ====================================== -->
   <component>
     <name>PCIe</name>
-    <vc_type>git</vc_type>
-    <git_repo>git@github.com:HailiangQin/PCIe.git</git_repo>
-    <git_branch>master</git_branch>
-    <tag>LSA_v_1.0</tag>
+    <protocol>git</protocol>
+    <link>github.com:HailiangQin</link>
+    <branch>master</branch>
+    <tag>HEAD</tag>
     <dis>this is PCIe LSA delivery</dis>
     <destination>import/PCIe</destination>
   </component>
 
   <component>
     <name>NoC</name>
-    <vc_type>git</vc_type>
-    <git_repo>git@github.com:HailiangQin/NoC.git</git_repo>
-    <git_branch>master</git_branch>
-    <tag>LSA_v_1.0</tag>
+    <protocol>git</protocol>
+    <link>github.com:HailiangQin</link>
+    <branch>master</branch>
+    <tag>HEAD</tag>
     <dis>this is NoC LSA delivery</dis>
     <destination>import/NoC</destination>
   </component>

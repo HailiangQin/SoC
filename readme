@@ -1,5 +1,10 @@
 frun -e "chip_security/ChipSecurityBase" -E DEBUG -l chip.log
+//load_verdi -c ChipConfigBase -t ChipSecurityBase -s chip_security 
+//load_indago ChipConfigBase chip_security ChipSecurityBase
+
 frun -e "chip_security/ChipSecuritySanity" -E DEBUG -l chip.log
+//load_verdi -c ChipSecurityConfig -t ChipSecuritySanity -s chip_security 
+//load_indago ChipSecurityConfig chip_security ChipSecuritySanity
 
 frun -e "chip_security/ChipSecurityBase:chip_security/ChipSecuritySanity" -l chip.log
 frun -e "chip_security/all when=security" -l chip.log

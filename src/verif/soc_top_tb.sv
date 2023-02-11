@@ -1,4 +1,4 @@
-module top_tb;
+module soc_top_tb;
     import uvm_pkg::*;
     initial begin
         #1ns;

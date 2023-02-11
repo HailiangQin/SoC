@@ -9,5 +9,5 @@ import os
 
 
 ######## please add your suite/test as below ############
-set_suite("chip_security", "chip/security", security)
+AddSuite("chip_security", "chip/security", security)
 

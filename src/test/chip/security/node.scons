@@ -1,5 +1,5 @@
 
-C_SRC               = glob($UTILS_HOME/current/generic/blank.cpp)
+C_SRC               = fglob($UTILS_HOME/generic/blank.cpp)
 C_TARGET            = $test_obj
 C_LIB_INSTALL_PATH  = $test_runws
 LIBS                = [systemc, sync_dpi]
